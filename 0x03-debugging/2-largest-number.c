@@ -1,24 +1,28 @@
 #include "main.h"
-#include <ctype.h>
 
 /**
- * _isdigit - function that checks a digit
- *
- * @c: return int type
- *
- * Return: return 0 on success and 1 on fail
+ * largest_number - returns the largest of three numbers
+ * @a: first integer
+ * @b: second integer
+ * @c: third integer
+ * Return: largest number
  */
 
-int _isdigit(int c)
+int largest_number(int a, int b, int c)
 {
-	int i = isdigit(c);
+	int largest;
 
-	if (i > 0)
+	if (a >= b && a >= c)
 	{
-		return (1);
+		largest = a;
+	}
+	else if (b >= a && b >= c)
+	{
+		largest = b;
 	}
 	else
 	{
-		return (0);
+		largest = c;
 	}
+	return (largest);
 }
