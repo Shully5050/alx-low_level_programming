@@ -1,1 +1,1 @@
-my read me for this array project
+my read me file
